@@ -30,7 +30,7 @@ header h1 {
 
 header p {
   font-size: 1.15em; /* Make the subheading text bigger */
-  color: #e0e7ef; /* Lighter blue for better contrast */
+  color: #e0e7ef; /* Match the color with header h1 for consistency */
   font-weight: 600; /* Make the subheading a bit bolder */
   margin-bottom: 10px; /* Add some space below */
 }
@@ -60,7 +60,8 @@ section > div {
 
 section img {
   width: 100%; /* Make images fill the card width */
-  height: auto;
+  height: 140px; /* Set a consistent height for all images */
+  object-fit: cover; /* Crop images to fill the area without stretching */
   border-radius: 4px;
   margin-bottom: 10px;
 }
