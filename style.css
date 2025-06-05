@@ -1,1 +1,121 @@
 /* Add your CSS here */
+
+/* Basic page styles */
+body {
+  font-family: Arial, sans-serif; /* Use a simple, easy-to-read font */
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5; /* Light background color */
+}
+
+header {
+  background-color: #0071c5; /* Intel blue */
+  color: white;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+header img {
+  width: 100px; /* Make logo smaller on mobile */
+  display: block;
+  margin: 0 auto 10px auto;
+}
+
+header h1 {
+  font-size: 2em; /* Make the main heading larger */
+  margin: 20px 0 10px 0; /* Add more space above and below */
+  font-weight: bold; /* Make it bold */
+  color: #e0e7ef; /* Match the subheading color for consistency */
+}
+
+header p {
+  font-size: 1.15em; /* Make the subheading text bigger */
+  color: #e0e7ef; /* Lighter blue for better contrast */
+  font-weight: 600; /* Make the subheading a bit bolder */
+  margin-bottom: 10px; /* Add some space below */
+}
+
+h1 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+section {
+  /* Use flexbox for the timeline */
+  display: flex;
+  flex-direction: column; /* Stack cards vertically by default */
+  gap: 10px; /* Space between cards */
+  padding: 10px;
+}
+
+/* Timeline card styles */
+section > div {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  padding: 15px;
+  min-width: 250px; /* Minimum width for each card */
+  flex: 0 0 auto; /* Prevent cards from shrinking */
+}
+
+section img {
+  width: 100%; /* Make images fill the card width */
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.2em;
+  color: #0071c5;
+  margin: 0 0 5px 0;
+}
+
+h3 {
+  font-size: 1em;
+  margin: 0 0 10px 0;
+}
+
+p {
+  font-size: 1em;
+  margin: 0 0 10px 0;
+}
+
+/* Hide the card description until hovered */
+section > div p {
+  display: none; /* Hide the paragraph by default */
+}
+
+section > div:hover p {
+  display: block; /* Show the paragraph when the card is hovered */
+}
+
+/* Responsive styles for larger screens */
+@media (min-width: 800px) {
+  section {
+    flex-direction: row; /* Arrange cards in a row */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    max-width: 1440px; /* Show about 4 cards at a time (4 x 350px + gaps) */
+    padding: 20px 0;
+    margin: 0 auto; /* Center the timeline on the page */
+  }
+  section > div {
+    min-width: 300px; /* Minimum width for each card */
+    max-width: 350px; /* Maximum width for each card */
+    margin-right: 20px; /* Space between cards */
+    flex: 0 0 23%; /* About 4 cards fit in the section */
+  }
+  section img {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Add a little space below the scroll message */
+p:last-child {
+  text-align: center;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Comments are included to help you understand each part! */
