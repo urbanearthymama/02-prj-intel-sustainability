@@ -29,10 +29,11 @@ header h1 {
 }
 
 header p {
-  font-size: 1.15em; /* Make the subheading text bigger */
-  color: #e0e7ef; /* Match the color with header h1 for consistency */
+  font-size: 1.25em; /* Make the subheading text bigger */
+  color: #ffffff; /* Use pure white for a lighter, softer look */
   font-weight: 600; /* Make the subheading a bit bolder */
-  margin-bottom: 10px; /* Add some space below */
+  margin-bottom: 16px; /* Add more space below */
+  line-height: 1.6; /* Add more line spacing for readability */
 }
 
 h1 {
