@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Intel: Sustainability Through the Ages</title>
   <link rel="stylesheet" href="style.css" />
+  <!-- Add Bootstrap CSS and Bootstrap Icons CDN links for the three-column section -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 <body>
 
@@ -81,7 +84,8 @@
     <div>
       <h2>2006</h2>
       <h3>Peak GHG Emissions</h3>
-      <img src="img/smog.jpg" alt="Factory emitting smog" />
+      <!-- Replace the placeholder with your own image. Example: a factory with smoke and solar panels. -->
+      <img src="img/ghg-emissions.jpg" alt="Factory with smoke and solar panels" />
       <p>
         This year marks Intel's highest annual greenhouse gas emissions 
         for operations. Over subsequent years, Intel invests heavily in 
@@ -94,7 +98,8 @@
     <div>
       <h2>2020</h2>
       <h3>RISE Strategy</h3>
-      <img src="img/water.jpg" alt="Water conservation" />
+      <!-- Replace the placeholder with your own image. Example: four icons for Responsible, Inclusive, Sustainable, Enabling. -->
+      <img src="img/rise-strategy.jpg" alt="RISE strategy icons" />
       <p>
         Intel launches its RISE (Responsible, Inclusive, Sustainable, 
         Enabling) strategy and 2030 goals, aiming to drive industry-wide 
@@ -106,7 +111,8 @@
     <div>
       <h2>2022</h2>
       <h3>Net-Zero By 2040</h3>
-      <img src="img/leaf.jpeg" alt="green leaf" />
+      <!-- Replace the placeholder with your own image. Example: globe with a green checkmark or net zero sign. -->
+      <img src="img/net-zero.jpg" alt="Globe with net zero sign" />
       <p>
         Intel announces its commitment to achieve net-zero greenhouse 
         gas emissions (Scope 1 and 2) across its global operations 
@@ -118,7 +124,8 @@
     <div>
       <h2>2023</h2>
       <h3>Renewable Electricity</h3>
-      <img src="img/renew.jpg" alt="Renewable Electricity" />
+      <!-- Replace the placeholder with your own image. Example: solar panels and wind turbines. -->
+      <img src="img/renewable-electricity.jpg" alt="Solar panels and wind turbines" />
       <p>
         The company achieves 99% renewable electricity usage worldwide, 
         helping to drastically lower carbon emissions and driving progress 
@@ -130,7 +137,8 @@
     <div>
       <h2>2024</h2>
       <h3>Sustainability Summit</h3>
-      <img src="img/green_computing.jpg" alt="green_computing" />
+      <!-- Replace the placeholder with your own image. Example: people around a table with a plant in the center. -->
+      <img src="img/summit.jpg" alt="People at a sustainability summit" />
       <p>
         Intel hosts its first Sustainability Summit, uniting suppliers, 
         government officials, and industry leaders to collaborate on 
@@ -139,5 +147,104 @@
     </div>
   </section>
   <p>Scroll to view timeline | Hover over cards to learn more!</p>
+
+  <!-- Three-Column Section: Simple Bootstrap Grid Example -->
+  <!-- We use Bootstrap's container, row, and col classes for layout -->
+  <!-- The icons use Bootstrap Icons (bi classes) -->
+  <div class="container my-5">
+    <div class="row">
+      <!-- Column 1 -->
+      <div class="col-md-4 text-center mb-4">
+        <!-- Icon for visual enhancement -->
+        <i class="bi bi-globe2" style="font-size: 2rem; color: #0071c5;"></i>
+        <h3>Global Impact</h3>
+        <p>Discover how Intel’s innovations are making a difference around the world.</p>
+        <a href="#" class="btn btn-primary">Learn More</a>
+      </div>
+      <!-- Column 2 -->
+      <div class="col-md-4 text-center mb-4">
+        <i class="bi bi-people-fill" style="font-size: 2rem; color: #0071c5;"></i>
+        <h3>Inclusive Culture</h3>
+        <p>See how Intel fosters diversity and inclusion in every aspect of its business.</p>
+        <a href="#" class="btn btn-primary">Learn More</a>
+      </div>
+      <!-- Column 3 -->
+      <div class="col-md-4 text-center mb-4">
+        <i class="bi bi-lightbulb-fill" style="font-size: 2rem; color: #0071c5;"></i>
+        <h3>Innovation</h3>
+        <p>Learn about Intel’s commitment to sustainable and responsible technology.</p>
+        <a href="#" class="btn btn-primary">Learn More</a>
+      </div>
+    </div>
+  </div>
+  <!-- End of Three-Column Section -->
+
+  <!-- Newsletter Subscription Form (Bootstrap) -->
+  <!-- This simple form lets users subscribe to Intel's sustainability newsletter -->
+  <div class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <h2 class="text-center mb-3">Subscribe to Our Sustainability Newsletter</h2>
+        <!-- Bootstrap form starts here -->
+        <form>
+          <!-- Email input field -->
+          <div class="mb-3">
+            <label for="newsletter-email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="newsletter-email" placeholder="Enter your email" required>
+          </div>
+          <!-- Submit button -->
+          <div class="d-grid">
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- End of Newsletter Subscription Form -->
+
+  <!-- Footer Section -->
+  <footer style="background-color: #0071c5; color: white; padding: 20px 0; text-align: center;">
+    <!-- Navigation links (placeholders) -->
+    <nav style="margin-bottom: 10px;">
+      <a href="#" style="color: white; margin: 0 10px; text-decoration: underline;">Privacy Policy</a>
+      <a href="#" style="color: white; margin: 0 10px; text-decoration: underline;">Terms of Use</a>
+      <a href="#" style="color: white; margin: 0 10px; text-decoration: underline;">Contact</a>
+    </nav>
+    <!-- Copyright notice -->
+    <p style="margin: 0;">&copy; 2024 Intel Corporation. All rights reserved.</p>
+  </footer>
+  <!-- End of Footer Section -->
+
+  <!-- Simple script to detect RTL languages and set page direction -->
+  <script>
+    // List of common RTL language codes
+    var rtlLanguages = ['ar', 'he', 'fa', 'ur'];
+
+    // Function to check and set RTL direction
+    function updateDirection() {
+      // Get the current language from the <html> tag
+      var lang = document.documentElement.lang;
+      // If the language is in the RTL list, set dir="rtl", else set dir="ltr"
+      if (rtlLanguages.includes(lang)) {
+        document.documentElement.dir = 'rtl';
+      } else {
+        document.documentElement.dir = 'ltr';
+      }
+    }
+
+    // Run on page load
+    updateDirection();
+
+    // Observe changes to the <html> lang attribute (e.g., by Google Translate)
+    var observer = new MutationObserver(function(mutations) {
+      mutations.forEach(function(mutation) {
+        if (mutation.attributeName === 'lang') {
+          updateDirection();
+        }
+      });
+    });
+    observer.observe(document.documentElement, { attributes: true });
+  </script>
+  <!-- End of RTL direction script -->
 </body>
 </html>
