@@ -48,7 +48,8 @@ section > div {
 
 section img {
   width: 100%; /* Make images fill the card width */
-  height: auto;
+  height: 160px; /* Set a fixed height for all card images */
+  object-fit: cover; /* Crop images to fill the area without stretching */
   border-radius: 4px;
   margin-bottom: 10px;
 }
@@ -68,6 +69,19 @@ p {
   font-size: 1em;
   margin: 0 0 10px 0;
   color: #222; /* Ensure paragraph text is dark for contrast */
+}
+
+/* Hide the card description until hovered, with a slow fade-in transition */
+section > div p {
+  opacity: 0; /* Hide the paragraph by default */
+  max-height: 0; /* Collapse the space */
+  overflow: hidden;
+  transition: opacity 0.6s ease, max-height 0.6s ease; /* Slow fade-in and expand */
+}
+
+section > div:hover p {
+  opacity: 1; /* Show the paragraph when the card is hovered */
+  max-height: 200px; /* Allow space for the text */
 }
 
 /* Responsive styles for larger screens */
